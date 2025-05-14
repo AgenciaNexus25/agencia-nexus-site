@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: "Contato | Agência Nexus",
@@ -8,99 +9,101 @@ export const metadata: Metadata = {
 // TODO: Implementar um formulário de contato funcional ou integrar com um serviço de terceiros.
 const ContactForm = () => {
   return (
-    <form className="space-y-4 bg-white p-8 rounded-lg shadow-lg">
+    <form className="space-y-6 bg-nexus-white p-8 rounded-lg shadow-2xl border border-nexus-gray/30">
       <div>
-        <label htmlFor="fullName" className="block text-sm font-medium text-gray-700">Nome Completo</label>
-        <input type="text" name="fullName" id="fullName" autoComplete="name" className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
+        <label htmlFor="fullName" className="block text-sm font-medium text-nexus-blue">Nome Completo</label>
+        <input type="text" name="fullName" id="fullName" autoComplete="name" className="mt-1 block w-full px-4 py-3 border border-nexus-gray/50 rounded-md shadow-sm focus:outline-none focus:ring-nexus-gold focus:border-nexus-gold sm:text-base text-nexus-blue" />
       </div>
       <div>
-        <label htmlFor="companyName" className="block text-sm font-medium text-gray-700">Nome da Empresa</label>
-        <input type="text" name="companyName" id="companyName" autoComplete="organization" className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
+        <label htmlFor="companyName" className="block text-sm font-medium text-nexus-blue">Nome da Empresa</label>
+        <input type="text" name="companyName" id="companyName" autoComplete="organization" className="mt-1 block w-full px-4 py-3 border border-nexus-gray/50 rounded-md shadow-sm focus:outline-none focus:ring-nexus-gold focus:border-nexus-gold sm:text-base text-nexus-blue" />
       </div>
       <div>
-        <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
-        <input type="email" name="email" id="email" autoComplete="email" className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
+        <label htmlFor="email" className="block text-sm font-medium text-nexus-blue">Email</label>
+        <input type="email" name="email" id="email" autoComplete="email" className="mt-1 block w-full px-4 py-3 border border-nexus-gray/50 rounded-md shadow-sm focus:outline-none focus:ring-nexus-gold focus:border-nexus-gold sm:text-base text-nexus-blue" />
       </div>
       <div>
-        <label htmlFor="phone" className="block text-sm font-medium text-gray-700">Telefone/WhatsApp</label>
-        <input type="tel" name="phone" id="phone" autoComplete="tel" className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
+        <label htmlFor="phone" className="block text-sm font-medium text-nexus-blue">Telefone/WhatsApp</label>
+        <input type="tel" name="phone" id="phone" autoComplete="tel" className="mt-1 block w-full px-4 py-3 border border-nexus-gray/50 rounded-md shadow-sm focus:outline-none focus:ring-nexus-gold focus:border-nexus-gold sm:text-base text-nexus-blue" />
       </div>
       <div>
-        <label htmlFor="segment" className="block text-sm font-medium text-gray-700">Segmento de Atuação</label>
-        <input type="text" name="segment" id="segment" className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
+        <label htmlFor="segment" className="block text-sm font-medium text-nexus-blue">Segmento de Atuação</label>
+        <input type="text" name="segment" id="segment" className="mt-1 block w-full px-4 py-3 border border-nexus-gray/50 rounded-md shadow-sm focus:outline-none focus:ring-nexus-gold focus:border-nexus-gold sm:text-base text-nexus-blue" />
       </div>
       <div>
-        <label htmlFor="message" className="block text-sm font-medium text-gray-700">Mensagem/Descreva sua necessidade</label>
-        <textarea name="message" id="message" rows={4} className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"></textarea>
+        <label htmlFor="message" className="block text-sm font-medium text-nexus-blue">Mensagem/Descreva sua necessidade</label>
+        <textarea name="message" id="message" rows={5} className="mt-1 block w-full px-4 py-3 border border-nexus-gray/50 rounded-md shadow-sm focus:outline-none focus:ring-nexus-gold focus:border-nexus-gold sm:text-base text-nexus-blue"></textarea>
       </div>
       <div>
-        <button type="submit" className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+        <button type="submit" className="w-full btn-primary text-lg shadow-md transform hover:scale-105 transition-transform duration-300">
           Enviar Mensagem
         </button>
       </div>
-      <p className="text-xs text-gray-500 text-center">Este formulário é um exemplo. A funcionalidade de envio precisa ser implementada.</p>
+      <p className="text-xs text-nexus-gray text-center">Este formulário é um exemplo. A funcionalidade de envio precisa ser implementada.</p>
     </form>
   );
 }
 
 export default function ContatoPage() {
   return (
-    <div className="space-y-10 py-8 px-4 md:px-0">
-      <section className="text-center">
-        <h1 className="text-4xl font-bold text-gray-800 mb-4">Entre em Contato com a Agência Nexus</h1>
-        <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+    <div className="space-y-10 py-12 px-4 sm:px-6 lg:px-8 bg-nexus-white text-nexus-blue">
+      <section className="text-center mb-16">
+        <h1 className="text-5xl font-bold text-nexus-blue mb-6">Entre em Contato com a Agência Nexus</h1>
+        <p className="text-xl text-nexus-gray max-w-4xl mx-auto leading-relaxed">
           Estamos prontos para ouvir sobre seus desafios e objetivos de negócio e discutir como as soluções de marketing digital da Agência Nexus podem ajudar sua PME a alcançar novos patamares de sucesso. Conectar sua empresa ao crescimento sustentável é a nossa paixão.
         </p>
       </section>
 
-      <section className="grid md:grid-cols-2 gap-10 items-start">
-        <div className="space-y-6">
+      <section className="grid md:grid-cols-2 gap-12 items-start">
+        <div className="space-y-8">
           <div>
-            <h2 className="text-2xl font-semibold text-indigo-700 mb-3">Fale Conosco Hoje Mesmo!</h2>
-            <p className="text-gray-700 leading-relaxed mb-4">
+            <h2 className="text-4xl font-semibold text-nexus-gold mb-5">Fale Conosco Hoje Mesmo!</h2>
+            <p className="text-nexus-blue text-lg leading-relaxed mb-4">
               Você pode entrar em contato conosco de diversas formas. Escolha a mais conveniente para você:
             </p>
           </div>
-          <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">Email Direto:</h3>
-            <p className="text-gray-700">
+          <div className="bg-nexus-blue text-nexus-white p-6 rounded-lg shadow-xl border-2 border-nexus-gold/50 transform hover:-translate-y-1 transition-transform duration-300">
+            <h3 className="text-2xl font-semibold text-nexus-gold mb-2">Email Direto:</h3>
+            <p className="text-nexus-gray">
               Prefere nos enviar um email? Escreva para:<br />
-              <a href="mailto:contato@agencianexus.com.br" className="text-indigo-600 hover:underline">contato@agencianexus.com.br</a> 
-              <span className="text-sm text-gray-500">(Email exemplo)</span>
+              <a href="mailto:contato@agencianexus.app.br" className="text-nexus-gold hover:underline font-medium">contato@agencianexus.app.br</a>
             </p>
           </div>
-          <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">Telefone/WhatsApp:</h3>
-            <p className="text-gray-700">
+          <div className="bg-nexus-blue text-nexus-white p-6 rounded-lg shadow-xl border-2 border-nexus-gold/50 transform hover:-translate-y-1 transition-transform duration-300">
+            <h3 className="text-2xl font-semibold text-nexus-gold mb-2">Telefone/WhatsApp:</h3>
+            <p className="text-nexus-gray">
               Para um contato mais direto, você pode nos ligar ou enviar uma mensagem via WhatsApp para:<br />
-              <a href="tel:+55XXXXXX-XXXX" className="text-indigo-600 hover:underline">(XX) XXXXX-XXXX</a> 
-              <span className="text-sm text-gray-500">(Telefone exemplo)</span>
+              <a href="tel:+550000000000" className="text-nexus-gold hover:underline font-medium">(XX) XXXXX-XXXX</a> 
+              <span className="text-sm text-nexus-gray/80 block mt-1">(Substituir pelo número real)</span>
             </p>
           </div>
-          <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">Nosso Modelo de Trabalho Híbrido</h3>
-            <p className="text-gray-700 leading-relaxed">
-              A Agência Nexus opera em um modelo de trabalho híbrido. Isso significa que temos flexibilidade para atender sua empresa onde quer que ela esteja. Realizamos reuniões produtivas tanto virtualmente, utilizando as melhores ferramentas de comunicação online, quanto presencialmente, especialmente para clientes localizados em [Cidade/Região de atuação principal, se houver, ou mencionar a flexibilidade para encontros presenciais estratégicos].
+          <div className="bg-nexus-blue text-nexus-white p-6 rounded-lg shadow-xl border-2 border-nexus-gold/50 transform hover:-translate-y-1 transition-transform duration-300">
+            <h3 className="text-2xl font-semibold text-nexus-gold mb-2">Nosso Modelo de Trabalho Híbrido</h3>
+            <p className="text-nexus-gray leading-relaxed">
+              A Agência Nexus opera em um modelo de trabalho híbrido. Isso significa que temos flexibilidade para atender sua empresa onde quer que ela esteja. Realizamos reuniões produtivas tanto virtualmente, utilizando as melhores ferramentas de comunicação online, quanto presencialmente, especialmente para clientes localizados em [Cidade/Região] ou para encontros estratégicos.
             </p>
           </div>
-           <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">Conecte-se Conosco nas Redes Sociais (Futuro)</h3>
-            <p className="text-gray-700 leading-relaxed">
+           <div className="bg-nexus-blue text-nexus-white p-6 rounded-lg shadow-xl border-2 border-nexus-gold/50 transform hover:-translate-y-1 transition-transform duration-300">
+            <h3 className="text-2xl font-semibold text-nexus-gold mb-2">Conecte-se Conosco nas Redes Sociais</h3>
+            <p className="text-nexus-gray leading-relaxed">
               Em breve, você também poderá nos encontrar e acompanhar nossas novidades e dicas nas principais redes sociais.
-              <br/><span className="text-sm text-gray-500">(Placeholder para links do LinkedIn, Instagram, Facebook da Agência Nexus)</span>
+              <br/><span className="text-sm text-nexus-gray/80">(Links para LinkedIn, Instagram, etc. serão adicionados aqui)</span>
             </p>
           </div>
         </div>
         
         <div>
-          <h2 className="text-2xl font-semibold text-indigo-700 mb-3 text-center md:text-left">Formulário de Contato Rápido:</h2>
+          <h2 className="text-4xl font-semibold text-nexus-gold mb-5 text-center md:text-left">Formulário de Contato Rápido:</h2>
           <ContactForm />
         </div>
       </section>
 
-      <section className="text-center mt-12 py-8 bg-indigo-600 text-white rounded-lg shadow-xl">
-        <h2 className="text-3xl font-bold mb-4">Não espere mais para transformar o marketing digital da sua empresa.</h2>
-        <p className="text-xl">A Agência Nexus está pronta para ser sua parceira estratégica rumo ao sucesso!</p>
+      <section className="text-center mt-16 py-16 bg-nexus-gold text-nexus-blue rounded-lg shadow-2xl px-4 sm:px-6 lg:px-8">
+        <h2 className="text-4xl font-semibold mb-6">Não espere mais para transformar o marketing digital da sua empresa.</h2>
+        <p className="text-xl mb-8">A Agência Nexus está pronta para ser sua parceira estratégica rumo ao sucesso!</p>
+        <Link href="/contato" className="bg-nexus-blue text-nexus-white font-bold py-4 px-10 rounded-lg text-xl hover:bg-opacity-90 transition duration-300 shadow-lg transform hover:scale-105">
+          Vamos Conversar!
+        </Link>
       </section>
     </div>
   );

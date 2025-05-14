@@ -74,31 +74,33 @@ const services = [
 
 export default function ServicosPage() {
   return (
-    <div className="space-y-10 py-8 px-4 md:px-0">
-      <section className="text-center">
-        <h1 className="text-4xl font-bold text-gray-800 mb-4">Nossos Serviços de Marketing Digital para PMEs</h1>
-        <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+    <div className="space-y-10 py-12 px-4 sm:px-6 lg:px-8 bg-nexus-white text-nexus-blue">
+      <section className="text-center mb-16">
+        <h1 className="text-5xl font-bold text-nexus-blue mb-6">Nossos Serviços de Marketing Digital para PMEs</h1>
+        <p className="text-xl text-nexus-gray max-w-4xl mx-auto leading-relaxed">
           A Agência Nexus oferece um portfólio completo e integrado de serviços de marketing digital, cuidadosamente selecionados para atender às necessidades específicas de pequenas e médias empresas (PMEs) nos setores de prestação de serviços e vendas. Nossa abordagem não é vender pacotes fechados, mas sim entender seus desafios e objetivos para construir uma estratégia personalizada que utilize as ferramentas certas para gerar resultados reais e mensuráveis.
         </p>
       </section>
 
       <section>
-        <h2 className="text-3xl font-semibold text-indigo-700 mb-8 text-center">Conheça Nossas Soluções:</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <h2 className="text-4xl font-semibold text-nexus-gold mb-12 text-center">Conheça Nossas Soluções:</h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
           {services.map((service) => (
-            <div key={service.id} className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col">
-              <h3 className="text-2xl font-semibold text-gray-800 mb-3">{service.title}</h3>
-              <p className="text-gray-600 mb-2 text-sm"><strong>O que é?</strong> {service.description}</p>
-              <p className="text-gray-600 mb-2 text-sm"><strong>Benefícios para PMEs de Serviços e Vendas:</strong> {service.benefits}</p>
-              <p className="text-gray-600 text-sm"><strong>Como a Nexus entrega:</strong> {service.delivery}</p>
+            <div key={service.id} className="bg-nexus-blue text-nexus-white p-8 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2 flex flex-col border-2 border-nexus-gold/50">
+              <h3 className="text-2xl lg:text-3xl font-semibold text-nexus-gold mb-4 min-h-[3em] flex items-center">{service.title}</h3>
+              <div className="space-y-3 text-nexus-gray text-base leading-relaxed flex-grow">
+                <p><strong className="text-nexus-white/90">O que é?</strong> {service.description}</p>
+                <p><strong className="text-nexus-white/90">Benefícios para PMEs de Serviços e Vendas:</strong> {service.benefits}</p>
+                <p><strong className="text-nexus-white/90">Como a Nexus entrega:</strong> {service.delivery}</p>
+              </div>
             </div>
           ))}
         </div>
       </section>
 
-      <section className="text-center mt-12 py-8 bg-indigo-600 text-white rounded-lg shadow-xl">
-        <h2 className="text-3xl font-bold mb-4">Pronto para conectar sua empresa aos resultados que ela merece?</h2>
-        <Link href="/contato" className="bg-yellow-400 text-gray-800 font-bold py-3 px-8 rounded-lg text-lg hover:bg-yellow-300 transition duration-300 shadow-md">
+      <section className="text-center mt-16 py-16 bg-nexus-blue text-nexus-white rounded-lg shadow-inner px-4 sm:px-6 lg:px-8">
+        <h2 className="text-4xl font-semibold text-nexus-gold mb-6">Pronto para conectar sua empresa aos resultados que ela merece?</h2>
+        <Link href="/contato" className="btn-primary text-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
           Fale com um especialista da Nexus!
         </Link>
       </section>
