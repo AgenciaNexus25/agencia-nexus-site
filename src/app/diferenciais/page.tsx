@@ -44,7 +44,7 @@ export default function DiferenciaisPage() {
     <div className="space-y-10 py-12 px-4 sm:px-6 lg:px-8 bg-nexus-white text-nexus-blue">
       <section className="text-center mb-16">
         <h1 className="text-5xl font-bold text-nexus-blue mb-6">Por Que Escolher a Agência Nexus?</h1>
-        <p className="text-xl text-nexus-gray max-w-4xl mx-auto leading-relaxed">
+        <p className="text-xl text-nexus-blue max-w-4xl mx-auto leading-relaxed">
           No competitivo mercado de marketing digital, a escolha da agência certa pode ser o divisor de águas para o sucesso da sua pequena ou média empresa (PME). Na Agência Nexus, não apenas entendemos os desafios únicos que você enfrenta; nós construímos nossa abordagem em torno de diferenciais estratégicos que entregam valor real, transparência e, o mais importante, resultados que impulsionam seu crescimento.
         </p>
       </section>

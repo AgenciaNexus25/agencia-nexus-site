@@ -77,7 +77,7 @@ export default function ServicosPage() {
     <div className="space-y-10 py-12 px-4 sm:px-6 lg:px-8 bg-nexus-white text-nexus-blue">
       <section className="text-center mb-16">
         <h1 className="text-5xl font-bold text-nexus-blue mb-6">Nossos Serviços de Marketing Digital para PMEs</h1>
-        <p className="text-xl text-nexus-gray max-w-4xl mx-auto leading-relaxed">
+        <p className="text-xl text-nexus-blue max-w-4xl mx-auto leading-relaxed">
           A Agência Nexus oferece um portfólio completo e integrado de serviços de marketing digital, cuidadosamente selecionados para atender às necessidades específicas de pequenas e médias empresas (PMEs) nos setores de prestação de serviços e vendas. Nossa abordagem não é vender pacotes fechados, mas sim entender seus desafios e objetivos para construir uma estratégia personalizada que utilize as ferramentas certas para gerar resultados reais e mensuráveis.
         </p>
       </section>

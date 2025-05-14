@@ -39,7 +39,7 @@ const ContactForm = () => {
           Enviar Mensagem
         </button>
       </div>
-      <p className="text-xs text-nexus-gray text-center">Este formulário é um exemplo. A funcionalidade de envio precisa ser implementada.</p>
+      <p className="text-xs text-nexus-blue text-center">Este formulário é um exemplo. A funcionalidade de envio precisa ser implementada.</p>
     </form>
   );
 }
@@ -49,7 +49,7 @@ export default function ContatoPage() {
     <div className="space-y-10 py-12 px-4 sm:px-6 lg:px-8 bg-nexus-white text-nexus-blue">
       <section className="text-center mb-16">
         <h1 className="text-5xl font-bold text-nexus-blue mb-6">Entre em Contato com a Agência Nexus</h1>
-        <p className="text-xl text-nexus-gray max-w-4xl mx-auto leading-relaxed">
+        <p className="text-xl text-nexus-blue max-w-4xl mx-auto leading-relaxed">
           Estamos prontos para ouvir sobre seus desafios e objetivos de negócio e discutir como as soluções de marketing digital da Agência Nexus podem ajudar sua PME a alcançar novos patamares de sucesso. Conectar sua empresa ao crescimento sustentável é a nossa paixão.
         </p>
       </section>
