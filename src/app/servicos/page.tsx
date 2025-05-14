@@ -89,9 +89,9 @@ export default function ServicosPage() {
             <div key={service.id} className="bg-nexus-blue text-white p-8 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2 flex flex-col border-2 border-nexus-gold/50">
               <h3 className="text-2xl lg:text-3xl font-semibold text-nexus-gold mb-4 min-h-[3em] flex items-center">{service.title}</h3>
               <div className="space-y-3 text-white text-base leading-relaxed flex-grow">
-                <p><strong className="text-white">O que é?</strong> {service.description}</p>
-                <p><strong className="text-white">Benefícios para PMEs de Serviços e Vendas:</strong> {service.benefits}</p>
-                <p><strong className="text-white">Como a Nexus entrega:</strong> {service.delivery}</p>
+                <p className="text-white"><strong className="text-white">O que é?</strong> {service.description}</p>
+                <p className="text-white"><strong className="text-white">Benefícios para PMEs de Serviços e Vendas:</strong> {service.benefits}</p>
+                <p className="text-white"><strong className="text-white">Como a Nexus entrega:</strong> {service.delivery}</p>
               </div>
             </div>
           ))}
