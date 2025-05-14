@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Novo esquema de cores com fundo claro */
+    --background: 210 40% 98%; /* nexus-white ou um cinza bem claro */
+    --foreground: 222 47% 11%; /* nexus-blue para texto principal */
+
+    --card: 210 40% 98%; /* Fundo claro para cards */
+    --card-foreground: 222 47% 11%; /* Texto escuro para cards */
+
+    --popover: 210 40% 98%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 43 67% 56%; /* nexus-gold para elementos primários */
+    --primary-foreground: 210 40% 98%; /* nexus-white para texto em botões dourados */
+
+    --secondary: 222 47% 11%; /* nexus-blue para elementos secundários */
+    --secondary-foreground: 210 40% 98%; /* nexus-white para texto em botões azuis */
+
+    --muted: 220 10% 90%; /* Um cinza mais suave para texto silenciado */
+    --muted-foreground: 220 10% 40%; /* Um cinza mais escuro para texto silenciado */
+
+    --accent: 43 67% 56%; /* nexus-gold */
+    --accent-foreground: 222 47% 11%; /* nexus-blue para texto em elementos de destaque dourados */
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 13% 85%; /* Um cinza para bordas */
+    --input: 220 13% 80%; /* Um cinza para inputs */
+    --ring: 43 67% 56%; /* nexus-gold para anéis de foco */
+
+    --radius: 0.5rem;
+
+    /* Cores da barra lateral, se necessário, podem seguir o tema claro ou serem personalizadas */
+    --sidebar-background: 220 15% 95%; /* Um cinza claro para a barra lateral */
+    --sidebar-foreground: 222 47% 11%; /* Texto escuro para a barra lateral */
+    --sidebar-primary: 43 67% 56%; /* nexus-gold */
+    --sidebar-primary-foreground: 210 40% 98%; /* nexus-white */
+    --sidebar-accent: 43 67% 56%; /* nexus-gold */
+    --sidebar-accent-foreground: 222 47% 11%; /* nexus-blue */
+    --sidebar-border: 220 13% 85%; /* Cinza para bordas da barra lateral */
+    --sidebar-ring: 43 67% 56%; /* nexus-gold */
+  }
+
+  /* O modo escuro pode ser definido separadamente se desejado no futuro */
+  /* Por enquanto, o foco é no tema claro */
+  .dark {
+    --background: 222 47% 11%; 
+    --foreground: 210 40% 98%; 
+
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 43 67% 56%; 
+    --primary-foreground: 222 47% 11%; 
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 43 67% 56%; 
+    --accent-foreground: 222 47% 11%; 
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 43 67% 56%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+
+  /* Ajustes para melhor contraste com fundo claro */
+  h1 {
+    @apply text-4xl mt-6 mb-4 text-nexus-blue; /* Títulos principais em azul escuro */
+  }
+
+  h2 {
+    @apply text-3xl mt-5 mb-3 text-nexus-blue; /* Subtítulos em azul escuro */
+  }
+
+  h3 {
+    @apply text-2xl mt-4 mb-2 text-nexus-blue; /* Títulos menores em azul escuro */
+  }
+
+  p {
+    @apply mb-4 leading-relaxed text-gray-700; /* Texto de parágrafo em cinza escuro para boa legibilidade */
+  }
+
+  a {
+    @apply text-nexus-gold hover:text-nexus-blue transition-colors duration-300; /* Links em dourado, hover azul */
+  }
+
+  .btn-primary {
+    @apply bg-nexus-gold text-nexus-white font-semibold py-2 px-6 rounded-md hover:bg-opacity-80 transition-colors duration-300 shadow-md;
+  }
+
+  .btn-secondary {
+    @apply bg-nexus-blue text-nexus-white font-semibold py-2 px-6 rounded-md border border-nexus-gold hover:bg-opacity-80 transition-colors duration-300 shadow-md;
+  }
+}
+
