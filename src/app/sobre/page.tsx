@@ -26,19 +26,19 @@ export default function SobrePage() {
         <div className="grid md:grid-cols-3 gap-10 text-left">
           <div className="transform hover:-translate-y-1 transition-transform duration-300">
             <h3 className="text-3xl font-semibold text-nexus-gold mb-3">Missão</h3>
-            <p className="text-nexus-gray text-lg leading-relaxed">
+            <p className="text-nexus-white text-lg leading-relaxed">
               Impulsionar o crescimento sustentável de pequenas e médias empresas nos setores de prestação de serviços e vendas através de soluções de marketing digital personalizadas, transparentes e inabalavelmente focadas em resultados mensuráveis.
             </p>
           </div>
           <div className="transform hover:-translate-y-1 transition-transform duration-300">
             <h3 className="text-3xl font-semibold text-nexus-gold mb-3">Visão</h3>
-            <p className="text-nexus-gray text-lg leading-relaxed">
+            <p className="text-nexus-white text-lg leading-relaxed">
               Ser a agência de marketing digital referência para PMEs nos segmentos de serviços e vendas no Brasil, reconhecida pela excelência na entrega, pela construção de relacionamentos de confiança inabaláveis e pelo impacto positivo e transformador que geramos nos negócios de nossos clientes.
             </p>
           </div>
           <div className="transform hover:-translate-y-1 transition-transform duration-300">
             <h3 className="text-3xl font-semibold text-nexus-gold mb-3">Valores Fundamentais</h3>
-            <ul className="list-disc list-inside text-nexus-gray space-y-2 text-lg leading-relaxed">
+            <ul className="list-disc list-inside text-nexus-white space-y-2 text-lg leading-relaxed">
               <li>Parceria Genuína</li>
               <li>Foco no Resultado do Cliente</li>
               <li>Excelência e Inovação Contínua</li>
