@@ -86,19 +86,19 @@ export default function ServicosPage() {
         <h2 className="text-4xl font-semibold text-nexus-gold mb-12 text-center">Conheça Nossas Soluções:</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
           {services.map((service) => (
-            <div key={service.id} className="bg-nexus-blue text-nexus-white p-8 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2 flex flex-col border-2 border-nexus-gold/50">
+            <div key={service.id} className="bg-nexus-blue text-white p-8 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2 flex flex-col border-2 border-nexus-gold/50">
               <h3 className="text-2xl lg:text-3xl font-semibold text-nexus-gold mb-4 min-h-[3em] flex items-center">{service.title}</h3>
-              <div className="space-y-3 text-nexus-white text-base leading-relaxed flex-grow">
-                <p><strong className="text-nexus-white">O que é?</strong> {service.description}</p>
-                <p><strong className="text-nexus-white">Benefícios para PMEs de Serviços e Vendas:</strong> {service.benefits}</p>
-                <p><strong className="text-nexus-white">Como a Nexus entrega:</strong> {service.delivery}</p>
+              <div className="space-y-3 text-white text-base leading-relaxed flex-grow">
+                <p><strong className="text-white">O que é?</strong> {service.description}</p>
+                <p><strong className="text-white">Benefícios para PMEs de Serviços e Vendas:</strong> {service.benefits}</p>
+                <p><strong className="text-white">Como a Nexus entrega:</strong> {service.delivery}</p>
               </div>
             </div>
           ))}
         </div>
       </section>
 
-      <section className="text-center mt-16 py-16 bg-nexus-blue text-nexus-white rounded-lg shadow-inner px-4 sm:px-6 lg:px-8">
+      <section className="text-center mt-16 py-16 bg-nexus-blue text-white rounded-lg shadow-inner px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-semibold text-nexus-gold mb-6">Pronto para conectar sua empresa aos resultados que ela merece?</h2>
         <Link href="/contato" className="btn-primary text-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
           Fale com um especialista da Nexus!
