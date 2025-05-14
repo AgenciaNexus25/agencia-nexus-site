@@ -41,28 +41,28 @@ const differentials = [
 
 export default function DiferenciaisPage() {
   return (
-    <div className="space-y-10 py-8 px-4 md:px-0 bg-nexus-white text-nexus-blue">
-      <section className="text-center">
-        <h1 className="text-4xl font-bold text-nexus-blue mb-4">Por Que Escolher a Agência Nexus?</h1>
-        <p className="text-lg text-nexus-gray max-w-3xl mx-auto">
+    <div className="space-y-10 py-12 px-4 sm:px-6 lg:px-8 bg-nexus-white text-nexus-blue">
+      <section className="text-center mb-16">
+        <h1 className="text-5xl font-bold text-nexus-blue mb-6">Por Que Escolher a Agência Nexus?</h1>
+        <p className="text-xl text-nexus-gray max-w-4xl mx-auto leading-relaxed">
           No competitivo mercado de marketing digital, a escolha da agência certa pode ser o divisor de águas para o sucesso da sua pequena ou média empresa (PME). Na Agência Nexus, não apenas entendemos os desafios únicos que você enfrenta; nós construímos nossa abordagem em torno de diferenciais estratégicos que entregam valor real, transparência e, o mais importante, resultados que impulsionam seu crescimento.
         </p>
       </section>
 
-      <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
         {differentials.map((item) => (
-          <div key={item.id} className="bg-nexus-blue text-nexus-white p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2 flex flex-col">
-            <h2 className="text-xl lg:text-2xl font-semibold text-nexus-gold mb-3 min-h-[4.5em] flex items-center">{item.title}</h2>
-            <p className="text-nexus-gray leading-relaxed flex-grow">{item.content}</p>
+          <div key={item.id} className="bg-nexus-blue text-nexus-white p-8 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2 flex flex-col border-2 border-nexus-gold/50">
+            <h2 className="text-2xl lg:text-3xl font-semibold text-nexus-gold mb-4 min-h-[3em] flex items-center">{item.title}</h2>
+            <p className="text-nexus-white text-base leading-relaxed flex-grow">{item.content}</p>
           </div>
         ))}
       </section>
 
-      <section className="text-center mt-12 py-12 bg-nexus-blue text-nexus-white rounded-lg shadow-inner px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-semibold text-nexus-gold mb-4">A Agência Nexus é mais do que uma fornecedora de serviços;</h2>
-        <p className="text-xl text-nexus-gray mb-6">somos seus parceiros dedicados na jornada de crescimento digital.</p>
+      <section className="text-center mt-16 py-16 bg-nexus-blue text-nexus-white rounded-lg shadow-inner px-4 sm:px-6 lg:px-8">
+        <h2 className="text-4xl font-semibold text-nexus-gold mb-6">A Agência Nexus é mais do que uma fornecedora de serviços;</h2>
+        <p className="text-xl text-nexus-white mb-8">somos seus parceiros dedicados na jornada de crescimento digital.</p>
         <Link href="/contato"
-          className="btn-primary text-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+          className="btn-primary text-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
           Pronto para experienciar a diferença Nexus?
         </Link>
       </section>

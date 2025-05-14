@@ -64,30 +64,30 @@ export default function ContatoPage() {
           </div>
           <div className="bg-nexus-blue text-nexus-white p-6 rounded-lg shadow-xl border-2 border-nexus-gold/50 transform hover:-translate-y-1 transition-transform duration-300">
             <h3 className="text-2xl font-semibold text-nexus-gold mb-2">Email Direto:</h3>
-            <p className="text-nexus-gray">
+            <p className="text-nexus-white">
               Prefere nos enviar um email? Escreva para:<br />
               <a href="mailto:contato@agencianexus.app.br" className="text-nexus-gold hover:underline font-medium">contato@agencianexus.app.br</a>
             </p>
           </div>
           <div className="bg-nexus-blue text-nexus-white p-6 rounded-lg shadow-xl border-2 border-nexus-gold/50 transform hover:-translate-y-1 transition-transform duration-300">
             <h3 className="text-2xl font-semibold text-nexus-gold mb-2">Telefone/WhatsApp:</h3>
-            <p className="text-nexus-gray">
+            <p className="text-nexus-white">
               Para um contato mais direto, você pode nos ligar ou enviar uma mensagem via WhatsApp para:<br />
               <a href="tel:+550000000000" className="text-nexus-gold hover:underline font-medium">(XX) XXXXX-XXXX</a> 
-              <span className="text-sm text-nexus-gray/80 block mt-1">(Substituir pelo número real)</span>
+              <span className="text-sm text-nexus-white/80 block mt-1">(Substituir pelo número real)</span>
             </p>
           </div>
           <div className="bg-nexus-blue text-nexus-white p-6 rounded-lg shadow-xl border-2 border-nexus-gold/50 transform hover:-translate-y-1 transition-transform duration-300">
             <h3 className="text-2xl font-semibold text-nexus-gold mb-2">Nosso Modelo de Trabalho Híbrido</h3>
-            <p className="text-nexus-gray leading-relaxed">
+            <p className="text-nexus-white leading-relaxed">
               A Agência Nexus opera em um modelo de trabalho híbrido. Isso significa que temos flexibilidade para atender sua empresa onde quer que ela esteja. Realizamos reuniões produtivas tanto virtualmente, utilizando as melhores ferramentas de comunicação online, quanto presencialmente, especialmente para clientes localizados em [Cidade/Região] ou para encontros estratégicos.
             </p>
           </div>
            <div className="bg-nexus-blue text-nexus-white p-6 rounded-lg shadow-xl border-2 border-nexus-gold/50 transform hover:-translate-y-1 transition-transform duration-300">
             <h3 className="text-2xl font-semibold text-nexus-gold mb-2">Conecte-se Conosco nas Redes Sociais</h3>
-            <p className="text-nexus-gray leading-relaxed">
+            <p className="text-nexus-white leading-relaxed">
               Em breve, você também poderá nos encontrar e acompanhar nossas novidades e dicas nas principais redes sociais.
-              <br/><span className="text-sm text-nexus-gray/80">(Links para LinkedIn, Instagram, etc. serão adicionados aqui)</span>
+              <br/><span className="text-sm text-nexus-white/80">(Links para LinkedIn, Instagram, etc. serão adicionados aqui)</span>
             </p>
           </div>
         </div>
