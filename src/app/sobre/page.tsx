@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Sobre Nós | Agência Nexus",
@@ -269,7 +268,7 @@ export default function SobrePage() {
                   {/* Exemplo de Comunicação */}
                   <div className="mt-6 p-4 bg-nexus-blue/10 rounded-lg border border-nexus-blue/20">
                     <h4 className="text-xl font-semibold text-nexus-gold mb-3">Exemplo de Comunicação</h4>
-                    <p className="text-nexus-blue text-base italic">"{member.communication}"</p>
+                    <p className="text-nexus-blue text-base italic">&quot;{member.communication}&quot;</p>
                   </div>
                 </div>
               </div>
