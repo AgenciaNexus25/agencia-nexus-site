@@ -19,7 +19,6 @@ export default function SobrePage() {
         "Confiável e preciso",
         "Curioso e sempre atualizado com novas tecnologias"
       ],
-      tone: "Profissional e técnico, mas acessível. Explicativo sem ser condescendente. Usa analogias para simplificar conceitos complexos. Direto e objetivo, valorizando a precisão das informações.",
       skills: [
         "Domínio profundo de temas técnicos de engenharia e construção",
         "Capacidade de criar conteúdo educativo de alta qualidade",
@@ -34,8 +33,7 @@ export default function SobrePage() {
         "Consultoria técnica para outros departamentos",
         "Garantia da precisão e confiabilidade das informações"
       ],
-      channels: ["Blog/Site (artigos técnicos)", "LinkedIn (conteúdo profissional)", "YouTube (vídeos explicativos)", "Webinars e workshops"],
-      communication: "Neste artigo, vou explicar os três principais fatores que afetam a estrutura de uma residência em região litorânea. Compreender esses elementos é fundamental para garantir a segurança e durabilidade da sua construção. Vamos analisar cada um deles com exemplos práticos e soluções recomendadas..."
+      projectExample: "Neste artigo, vou explicar os três principais fatores que afetam a estrutura de uma residência em região litorânea. Compreender esses elementos é fundamental para garantir a segurança e durabilidade da sua construção. Vamos analisar cada um deles com exemplos práticos e soluções recomendadas..."
     },
     {
       name: "Carla Oliveira",
@@ -49,7 +47,6 @@ export default function SobrePage() {
         "Proativa e solucionadora de problemas",
         "Organizada e atenta aos detalhes"
       ],
-      tone: "Caloroso e acessível. Consultivo e orientador. Personalizado para cada cliente. Positivo mesmo ao lidar com problemas. Usa linguagem simples e inclusiva.",
       skills: [
         "Excelência em comunicação interpessoal",
         "Habilidade para identificar necessidades não expressas",
@@ -64,8 +61,7 @@ export default function SobrePage() {
         "Monitoramento da satisfação dos clientes",
         "Coordenação de respostas a dúvidas e solicitações"
       ],
-      channels: ["E-mail marketing (newsletters personalizadas)", "WhatsApp Business", "Instagram Direct e Stories interativos", "Webinars e sessões de Q&A"],
-      communication: "Olá! Percebi que você está considerando iniciar um projeto de construção residencial. É um momento emocionante, mas também cheio de decisões importantes. Preparei este guia com os 5 primeiros passos que recomendo para qualquer pessoa nessa fase. Se tiver dúvidas específicas sobre seu projeto, estou à disposição para conversarmos mais..."
+      projectExample: "Olá! Percebi que você está considerando iniciar um projeto de construção residencial. É um momento emocionante, mas também cheio de decisões importantes. Preparei este guia com os 5 primeiros passos que recomendo para qualquer pessoa nessa fase. Se tiver dúvidas específicas sobre seu projeto, estou à disposição para conversarmos mais..."
     },
     {
       name: "Rafael Torres",
@@ -79,7 +75,6 @@ export default function SobrePage() {
         "Inspirador e motivador",
         "Atento às tendências de mercado"
       ],
-      tone: "Profissional com toques de inspiração. Confiante e assertivo. Usa storytelling para engajar. Equilibra formalidade com proximidade. Inspirador e orientado a resultados.",
       skills: [
         "Expertise em branding e identidade visual",
         "Habilidade para desenvolver narrativas de marca impactantes",
@@ -94,8 +89,7 @@ export default function SobrePage() {
         "Criação de cases de sucesso e histórias de clientes",
         "Garantia da consistência da voz da marca"
       ],
-      channels: ["Instagram Feed (conteúdo institucional)", "Facebook (comunicação corporativa)", "Site (páginas institucionais)", "Apresentações e pitches para clientes"],
-      communication: "Estamos orgulhosos de apresentar mais um projeto transformador entregue pela Ecoss Engenharia. Esta residência em Cururupu não apenas atende aos mais altos padrões técnicos, mas também representa nossa missão de criar espaços que melhoram a vida das pessoas. Confira o antes e depois e descubra como nossa abordagem integrada fez a diferença..."
+      projectExample: "Estamos orgulhosos de apresentar mais um projeto transformador entregue pela Ecoss Engenharia. Esta residência em Cururupu não apenas atende aos mais altos padrões técnicos, mas também representa nossa missão de criar espaços que melhoram a vida das pessoas. Confira o antes e depois e descubra como nossa abordagem integrada fez a diferença..."
     },
     {
       name: "Juliana Martins",
@@ -109,7 +103,6 @@ export default function SobrePage() {
         "Curiosa e experimental",
         "Focada em resultados mensuráveis"
       ],
-      tone: "Objetivo e direto. Baseado em dados e evidências. Técnico quando necessário. Pragmático e orientado a soluções. Usa terminologia de marketing com clareza.",
       skills: [
         "Expertise em estratégias de marketing digital",
         "Domínio de ferramentas de análise e mensuração",
@@ -124,8 +117,7 @@ export default function SobrePage() {
         "Coordenação de testes A/B e experimentos",
         "Relatórios de performance e recomendações"
       ],
-      channels: ["Google Ads e Meta Ads", "Analytics e ferramentas de dados", "Plataformas de automação de marketing", "Dashboards e relatórios de performance"],
-      communication: "Nossa campanha para o serviço de regularização de imóveis alcançou um ROI de 320% no último trimestre. Identificamos que segmentar por bairros específicos e usar mensagens focadas em prazos legais aumentou nossa taxa de conversão em 28%. Para o próximo ciclo, recomendo ampliarmos o investimento neste segmento e testarmos novas abordagens criativas baseadas nos dados que coletamos..."
+      projectExample: "Nossa campanha para o serviço de regularização de imóveis alcançou um ROI de 320% no último trimestre. Identificamos que segmentar por bairros específicos e usar mensagens focadas em prazos legais aumentou nossa taxa de conversão em 28%. Para o próximo ciclo, recomendo ampliarmos o investimento neste segmento e testarmos novas abordagens criativas baseadas nos dados que coletamos..."
     },
     {
       name: "André Lima",
@@ -139,7 +131,6 @@ export default function SobrePage() {
         "Inovador e experimental",
         "Colaborativo e aberto a feedback"
       ],
-      tone: "Entusiástico e apaixonado. Visual e descritivo. Usa referências culturais e de design. Informal mas profissional. Valoriza a estética e a experiência sensorial.",
       skills: [
         "Domínio de ferramentas de design e edição (Adobe Creative Suite)",
         "Expertise em fotografia e direção de arte",
@@ -154,8 +145,7 @@ export default function SobrePage() {
         "Desenvolvimento de templates e guias de estilo",
         "Garantia da qualidade visual em todos os materiais"
       ],
-      channels: ["Instagram (conteúdo visual)", "YouTube (produção de vídeos)", "Pinterest (inspiração e referências)", "Portfólio visual e apresentações"],
-      communication: "Para este projeto, criamos uma linguagem visual que combina elementos técnicos da engenharia com a estética natural da região litorânea. Utilizamos uma paleta de azuis profundos contrastando com tons terrosos para representar a conexão entre a estrutura construída e o ambiente natural. Cada imagem foi cuidadosamente composta para destacar tanto a precisão técnica quanto o resultado estético final..."
+      projectExample: "Para este projeto, criamos uma linguagem visual que combina elementos técnicos da engenharia com a estética natural da região litorânea. Utilizamos uma paleta de azuis profundos contrastando com tons terrosos para representar a conexão entre a estrutura construída e o ambiente natural. Cada imagem foi cuidadosamente composta para destacar tanto a precisão técnica quanto o resultado estético final..."
     }
   ];
 
@@ -227,22 +217,12 @@ export default function SobrePage() {
                 {/* Detalhes do perfil */}
                 <div className="md:w-2/3 p-6">
                   <div className="grid md:grid-cols-2 gap-6">
-                    {/* Características e Tom de Voz */}
+                    {/* Características */}
                     <div>
                       <h4 className="text-xl font-semibold text-nexus-gold mb-3">Características Pessoais</h4>
                       <ul className="list-disc list-inside text-nexus-blue space-y-1 mb-6">
                         {member.characteristics.map((char, i) => (
                           <li key={i} className="text-base">{char}</li>
-                        ))}
-                      </ul>
-                      
-                      <h4 className="text-xl font-semibold text-nexus-gold mb-3">Tom de Voz</h4>
-                      <p className="text-nexus-blue text-base mb-6">{member.tone}</p>
-                      
-                      <h4 className="text-xl font-semibold text-nexus-gold mb-3">Canais Principais</h4>
-                      <ul className="list-disc list-inside text-nexus-blue space-y-1">
-                        {member.channels.map((channel, i) => (
-                          <li key={i} className="text-base">{channel}</li>
                         ))}
                       </ul>
                     </div>
@@ -265,10 +245,10 @@ export default function SobrePage() {
                     </div>
                   </div>
                   
-                  {/* Exemplo de Comunicação */}
+                  {/* Exemplo de Apresentação de Projeto/Solução */}
                   <div className="mt-6 p-4 bg-nexus-blue/10 rounded-lg border border-nexus-blue/20">
-                    <h4 className="text-xl font-semibold text-nexus-gold mb-3">Exemplo de Comunicação</h4>
-                    <p className="text-nexus-blue text-base italic">&quot;{member.communication}&quot;</p>
+                    <h4 className="text-xl font-semibold text-nexus-gold mb-3">Exemplo de Apresentação de Projeto/Solução</h4>
+                    <p className="text-nexus-blue text-base italic">&quot;{member.projectExample}&quot;</p>
                   </div>
                 </div>
               </div>
