@@ -9,6 +9,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Agência Nexus - Conectando sua Empresa ao Sucesso Digital",
   description: "Agência de marketing digital focada em PMEs de serviços e vendas. Estratégias personalizadas para resultados mensuráveis.",
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({
@@ -28,4 +31,3 @@ export default function RootLayout({
     </html>
   );
 }
-
