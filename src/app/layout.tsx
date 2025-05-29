@@ -10,8 +10,7 @@ export const metadata: Metadata = {
   title: "Agência Nexus - Conectando sua Empresa ao Sucesso Digital",
   description: "Agência de marketing digital focada em PMEs de serviços e vendas. Estratégias personalizadas para resultados mensuráveis.",
   icons: [
-    { rel: 'icon', url: '/favicon.ico' },
-    { rel: 'icon', url: '/favicon.png' }
+    { rel: 'icon', url: '/favicon.ico' }
   ],
 };
 
@@ -24,7 +23,6 @@ export default function RootLayout({
     <html lang="pt-BR">
       <head>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="icon" href="/favicon.png" type="image/png" />
       </head>
       <body className={`${inter.className} flex flex-col min-h-screen`}>
         <Header />
